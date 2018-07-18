@@ -1,5 +1,7 @@
-require 'sinatra'
-
-get '/' do
-  erb: index
+#require 'sinatra'
+require_relative 'config/environment'
+class App < Sinatra::Base
+  get '/' do
+    erb: index
+  end
 end
