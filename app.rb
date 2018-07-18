@@ -1,4 +1,4 @@
 require 'sinatra'
   get '/' do
-    html: index.html
+    File.read(File.join('public', 'index.html'))
   end
