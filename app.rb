@@ -1,6 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  send_file 'index.html'
-  send_file 'main.css'
+  erb: index.html
+  erb: elements.html
+  erb: generic.html 
 end
