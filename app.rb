@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  erb: index.html
+  read_line 'index.html'
 end
